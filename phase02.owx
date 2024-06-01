@@ -1,0 +1,515 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/muhammadbilal/ontologies/2024/4/untitled-ontology-13"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/muhammadbilal/ontologies/2024/4/untitled-ontology-13"
+     versionIRI="http://www.shipment.org">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="schema" IRI="https://schema.org"/>
+    <Declaration>
+        <Class IRI="http://schema.org/Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/ShippingRate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Shipping_Destination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Shipping_Details"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Shipping_Label"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Shipping_Origin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Card"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carriers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cashondelievery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Deliever_Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Goods"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Items"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Order"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Payment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Record"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Routes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shipments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shipping_and_Logistics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Warehouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#addedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#byAirline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#byCard"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#byCash"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#byShip"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#byVehicle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containDetail"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDestination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasItem"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLabel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPayment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRoutes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasShipments"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWarehouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includeShipmentWeight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includein"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#places"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOrderId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSid"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Shipments"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+            <Class IRI="#Shipping_and_Logistics"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://schema.org/ShippingRate"/>
+        <Class IRI="#Payment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Shipping_Destination"/>
+        <Class IRI="http://schema.org/Shipping_Details"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Shipping_Details"/>
+        <Class IRI="http://schema.org/Shipping_Label"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Shipping_Label"/>
+        <Class IRI="#Shipments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Shipping_Origin"/>
+        <Class IRI="http://schema.org/Shipping_Details"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airline"/>
+        <Class IRI="#Mode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Card"/>
+        <Class IRI="#Payment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carriers"/>
+        <Class IRI="#Shipping_and_Logistics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cashondelievery"/>
+        <Class IRI="#Payment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Deliever_Status"/>
+        <Class IRI="#Shipments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Goods"/>
+        <Class IRI="#Shipping_and_Logistics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Items"/>
+        <Class IRI="#Warehouse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class IRI="#Shipping_and_Logistics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mode"/>
+        <Class IRI="#Carriers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Payment"/>
+        <Class IRI="#Shipping_and_Logistics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Price"/>
+        <Class IRI="#Goods"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Record"/>
+        <Class IRI="#Shipments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Routes"/>
+        <Class IRI="#Carriers"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ship"/>
+        <Class IRI="#Mode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shipments"/>
+        <Class IRI="#Shipping_and_Logistics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#Mode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Warehouse"/>
+        <Class IRI="#Shipping_and_Logistics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight"/>
+        <Class IRI="http://schema.org/Shipping_Details"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#addedTo"/>
+        <Class IRI="#Price"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#byAirline"/>
+        <Class IRI="#Mode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#byCard"/>
+        <Class IRI="#Payment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#byCash"/>
+        <Class IRI="#Payment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#byShip"/>
+        <Class IRI="#Mode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#byVehicle"/>
+        <Class IRI="#Mode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containDetail"/>
+        <Class IRI="http://schema.org/Shipping_Label"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDestination"/>
+        <Class IRI="http://schema.org/Shipping_Details"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasItem"/>
+        <Class IRI="#Warehouse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLabel"/>
+        <Class IRI="#Shipments"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Routes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Warehouse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMode"/>
+        <Class IRI="#Carriers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPayment"/>
+        <Class IRI="http://schema.org/Shipping_Details"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrice"/>
+        <Class IRI="#Goods"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRecord"/>
+        <Class IRI="#Shipments"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRoutes"/>
+        <Class IRI="#Carriers"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasShipments"/>
+        <Class IRI="#Shipping_and_Logistics"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSource"/>
+        <Class IRI="http://schema.org/Shipping_Details"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWarehouse"/>
+        <Class IRI="#Shipping_and_Logistics"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includeShipmentWeight"/>
+        <Class IRI="http://schema.org/Shipping_Details"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includein"/>
+        <Class IRI="#Price"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="http://schema.org/Shipping_Details"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#places"/>
+        <Class IRI="http://schema.org/Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#addedTo"/>
+        <Class IRI="#Payment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#byAirline"/>
+        <Class IRI="#Airline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#byCard"/>
+        <Class IRI="#Card"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#byCash"/>
+        <Class IRI="#Cashondelievery"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#byShip"/>
+        <Class IRI="#Ship"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#byVehicle"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containDetail"/>
+        <Class IRI="http://schema.org/Shipping_Details"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDestination"/>
+        <Class IRI="http://schema.org/Shipping_Destination"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasItem"/>
+        <Class IRI="#Items"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLabel"/>
+        <Class IRI="http://schema.org/Shipping_Label"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMode"/>
+        <Class IRI="#Mode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPayment"/>
+        <Class IRI="#Payment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrice"/>
+        <Class IRI="#Price"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRecord"/>
+        <Class IRI="#Record"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRoutes"/>
+        <Class IRI="#Routes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasShipments"/>
+        <Class IRI="#Shipments"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSource"/>
+        <Class IRI="http://schema.org/Shipping_Origin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWarehouse"/>
+        <Class IRI="#Warehouse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includeShipmentWeight"/>
+        <Class IRI="#Weight"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includein"/>
+        <Class IRI="#Payment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Payment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#places"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAddress"/>
+        <Class IRI="http://schema.org/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAddress"/>
+        <Class IRI="#Warehouse"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="http://schema.org/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="http://schema.org/Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOrderId"/>
+        <Class IRI="#Order"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSid"/>
+        <Class IRI="#Shipments"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAddress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOrderId"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSid"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
